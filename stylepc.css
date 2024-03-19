@@ -1,0 +1,166 @@
+ /*Ferramentas*/
+
+/*.luxurious-script-regular {
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bentham-regular {
+    font-family: "Bentham", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+
+
+@media screen and (min-width: 768px){
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;   
+}
+:root {
+    --cor1:#F0EEF8;
+    --cor2: #D0CAE6;
+    --cor3:#7C70AE;
+    --cor4:#574990;
+    --cor5:#A79ECD;
+    --fonte1:"Luxurious Script", cursive;
+    --fonte2:"Bentham", serif;
+}
+
+/* PARTE INICIAL DO SITE */
+body{
+}
+section#inicio{
+    
+}
+
+div#imgi{
+    background-image: url(imagens/teste.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#imgi p{
+    font-family: var(--fonte1);
+    font-size: 60px;
+    color: var(--cor1);    
+}
+
+div#imgi p#data{
+    font-size: 40px;
+}
+
+nav{
+    border-bottom: var(--cor2) solid 1px;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+}
+
+nav .list-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav .list-menu li{
+    list-style: none;        
+}
+
+nav .list-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor3);   
+    font-family: var(--fonte2);
+    padding-bottom: 20px;
+}
+
+nav .list-menu li a:hover{
+    border-bottom: var(--cor4) solid 2px;
+    color: var(--cor4);      
+}
+
+/* DESENVOLVIMENTO DO SITE */
+
+/*SEÇÃO NOIVOS*/
+section#noivos{
+    height: 100vh;    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#imgpeq .imgpeq{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#imgpeq {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 800px;
+}
+
+#imgpeq #e{
+    width: 95px;
+    display: flex;
+    align-items: center;
+    color: var(--cor2);
+    font-family: var(--fonte1);
+    font-size: 80px;
+}
+
+.imgefrase{
+    text-align: center;
+}
+
+.imgefrase h2{
+    padding-top: 15px;
+    font-family: var(--fonte2);
+    color: var(--cor3);
+    font-size: 20px;
+}
+
+div#info{
+    text-align: center;
+}
+
+div#info h2{
+    color: var(--cor5);
+    font-family: var(--fonte1);
+    font-size: 70px;
+}
+
+div#info p{
+    color: var(--cor4);
+    font-family: var(--fonte2);
+    font-size: 15px;
+}
+
+/*SEÇÃO CONTADOR*/
+section#contador{
+    display: flex;
+    height: 200px;
+    background-color: var(--cor1);
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: var(--cor5);
+}
