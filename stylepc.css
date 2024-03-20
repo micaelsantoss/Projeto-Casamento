@@ -1,34 +1,23 @@
- /*Ferramentas*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); 
 
-/*.luxurious-script-regular {
-    font-family: "Luxurious Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .bentham-regular {
-    font-family: "Bentham", serif;
-    font-weight: 400;
-    font-style: normal;
-  } */
-  
-
-
-@media screen and (min-width: 768px){
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=GFS+Didot&display=swap'); 
+ 
 *{
     padding: 0px;
     margin: 0px;
     font-style: italic;   
 }
+
 :root {
     --cor1:#F0EEF8;
     --cor2: #D0CAE6;
     --cor3:#7C70AE;
     --cor4:#574990;
     --cor5:#A79ECD;
-    --fonte1:"Luxurious Script", cursive;
-    --fonte2:"Bentham", serif;
+    --fonte1:"Alex Brush", cursive;
+    --fonte2:"GFS Didot", serif;
 }
+
 
 /* PARTE INICIAL DO SITE */
 body{
@@ -63,10 +52,8 @@ nav{
     border-bottom: var(--cor2) solid 1px;
     justify-content: center;
     display: flex;
-    width: 100vw;
     height: 60px;
     background-color: white;
-    position: fixed;
 }
 
 nav .list-menu{
@@ -86,6 +73,7 @@ nav .list-menu li a{
     color: var(--cor3);   
     font-family: var(--fonte2);
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 nav .list-menu li a:hover{
@@ -97,7 +85,7 @@ nav .list-menu li a:hover{
 
 /*SEÇÃO NOIVOS*/
 section#noivos{
-    height: 100vh;    
+    height: 700px;    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -106,8 +94,8 @@ section#noivos{
 }
 
 #imgpeq .imgpeq{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
 }
 
@@ -124,7 +112,11 @@ section#noivos{
     align-items: center;
     color: var(--cor2);
     font-family: var(--fonte1);
-    font-size: 80px;
+    font-size: 65px;   
+}
+
+#imgpeq #e h2{
+    font-weight: 100;
 }
 
 .imgefrase{
@@ -146,6 +138,7 @@ div#info h2{
     color: var(--cor5);
     font-family: var(--fonte1);
     font-size: 70px;
+    font-weight: 500;
 }
 
 div#info p{
@@ -163,4 +156,116 @@ section#contador{
     align-items: center;
     font-size: 100px;
     color: var(--cor5);
+}
+
+/* SEÇÃO SOBRE */
+section#sobre {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 140px;
+}
+
+section#sobre h1{
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 70px;
+    color: var(--cor5);
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+
+section#sobre div#blococol{
+    display: flex;  
+    flex-direction: column;  
+}
+
+section#sobre .blocoind{
+    display: flex;
+}
+
+section#sobre .blocoind img{
+    width: 520px;
+    height: 330px;
+}
+section#sobre .blocoind .sobrenoivos{
+    background-color: var(--cor1);
+    width: 520px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section#sobre .blocoind .sobrenoivos .sobrenoivos2{
+    width: 400px;
+    height: 10px;  
+    margin-top: 60px;
+    margin-left: 40px; 
+    text-align: justify;         
+}
+
+section#sobre .blocoind .sobrenoivos .sobrenoivos2 h3{
+    font-family: var(--fonte2);
+    color: var(--cor4);    
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
+    font-family: var(--fonte2);
+    color: var(--cor3);
+    font-style: normal;
+}
+
+/* SEÇÃO CONFIRMAÇÃO */
+section#confirmação{
+    height: 600px;
+    background-color: var(--cor1); 
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+}
+
+#formconf{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+/* SEÇÃO MAPA */
+section#mapa{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--cor4);  
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: var(--fonte2);
+    font-size: 15px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    border-bottom: solid 1px rgb(100, 0, 0);
+    color: rgb(100, 0, 0);
 }
