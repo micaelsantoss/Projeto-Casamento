@@ -142,7 +142,9 @@
         border-radius: 20px;
         display: block;
         overflow: hidden;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671) ;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+        transition: width .8s, heigth .8s;
+        transition-timing-function: ease;
     }
 
     .imag{
@@ -161,52 +163,195 @@
         padding-right: 50px;
         float: bottom;
         text-align: center;
-
-        h2{
-            padding-bottom: 10px;
-            font-size: 3rem;
-            font-family: var(--fonte1);
-            color: var(--cor3);
-        }
-        p{
-            padding-bottom: 10px; 
-            font-size: 1rem;
-            font-family: var(--fonte2);
-            color: var(--cor5);
-        }
-        input{
-            position: absolute;
-            left: 20px;
-            width: 210px;
-            height: 25px;
-            border-radius: 8px;
-            border-color: var(--cor3);
-        
-        }
-        button{
-            position: absolute;
-            margin-top: 5px;
-            left: 20px;
-            bottom: 70px;
-            width: 213px;
-            height: 35px;
-            border-radius: 8px;
-            font-family: var(--fonte);
-            text-transform: uppercase;
-            border: none;
-            background-color: var(--cor3);
-            color: white;
-            font-size: 1.4rem;
-            transition: .1s;
-        }
-        button:hover{
-            background-color: var(--cor4);
-            color: white;
-        }
-    }    
+    }
+    #formconf h2{
+        padding-bottom: 10px;
+        font-size: 3rem;
+        font-family: var(--fonte1);
+        color: var(--cor3);
+    }
+    #formconf p{
+        padding-bottom: 10px; 
+        font-size: 1rem;
+        font-family: var(--fonte2);
+        color: var(--cor5);
+    }
+    #formconf input{
+        position: absolute;
+        left: 20px;
+        width: 210px;
+        height: 25px;
+        border-radius: 8px;
+        border-color: var(--cor3);
+    
+    }
+    #formconf button{
+        position: absolute;
+        margin-top: 5px;
+        left: 20px;
+        bottom: 70px;
+        width: 213px;
+        height: 35px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        text-transform: uppercase;
+        border: none;
+        background-color: var(--cor3);
+        color: white;
+        font-size: 1.4rem;
+        transition: .1s;
+    }
+    #formconf button:hover{
+        background-color: var(--cor4);
+        color: white;
+    }   
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* PARTE INICIAL DO SITE */
+    html{
+        overflow-x: hidden;
+        font-size: 62.5%; 
+    } 
+    
+    nav .list-menu{
+        display: none;
+    }
 
+    /* SEÇÃO SOBRE */
+    section#sobremobile {
+        height: 850px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    section#sobre {
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    section#sobre h1{
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 6.5rem;
+        color: var(--cor5);
+        padding-top: 80px;
+        padding-bottom: 30px;
+        font-weight: 100;
+    }
+
+    section#sobre .blocoind img{
+        width: 320px;
+        height: 230px;
+    }
+    section#sobre .blocoind .sobrenoivos{
+        background-color: var(--cor1);
+        width: 320px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section#sobre .blocoind .sobrenoivos .sobrenoivos2{
+        width: 400px;
+        height: 10px;  
+        margin-top: 30px;
+        margin-left: 30px; 
+        text-align: justify;         
+    }
+
+    section#sobre .blocoind .sobrenoivos .sobrenoivos2 h3{
+        font-family: var(--fonte2);
+        color: var(--cor4);    
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
+        font-family: var(--fonte2);
+        color: var(--cor3);
+        font-style: normal;
+        font-size: 1.5rem;
+        width: 280px;
+    }
+
+    /* SEÇÃO CONFIRMAÇÃO */
+    #conf{
+        background-color: white;
+        width: 650px;
+        height: 500px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671) ;
+    }
+
+    .imag{
+        background-image: url(imagens/teste.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+        width: 45%;
+        height: 100%;
+    }
+
+    #formconf{
+        padding-top: 70px;
+        float: right;
+        width: 55%;
+        height: 100%;
+        text-align: center;
+        transition: width .8s, heigth .8s;
+        transition-timing-function: ease;
+    }
+
+    #formconf h2{
+        padding-bottom: 50px;
+        font-size: 4.5rem;
+        font-family: var(--fonte1);
+        color: var(--cor3);
+    }
+    #formconf p{
+        padding-bottom: 10px; 
+        font-size: 1.7rem;
+        font-family: var(--fonte2);
+        color: var(--cor5);
+    }
+    #formconf input{
+        width: 98.5%;
+        height: 25px;
+        border-radius: 8px;
+        border-color: var(--cor3);
+    
+    }
+    #formconf button{
+        margin-top: 5px;
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        text-transform: uppercase;
+        border: none;
+        background-color: var(--cor3);
+        color: white;
+        font-size: 1.4rem;
+        transition: .1s;
+    }
+    #formconf button:hover{
+        background-color: var(--cor4);
+        color: white;
+    }
+    
+}
 
 
 

@@ -302,44 +302,44 @@ section#confirmação{
     float: right;
     width: 55%;
     height: 100%;
-    text-align: center;
+    text-align: center;   
+}
 
-    h2{
-        padding-bottom: 40px;
-        font-size: 5rem;
-        font-family: var(--fonte1);
-        color: var(--cor3);
-    }
-    p{
-        padding-bottom: 20px; 
-        font-size: 1.7rem;
-        font-family: var(--fonte2);
-        color: var(--cor5);
-    }
-    input{
-        width: 79%;
-        height: 25px;
-        border-radius: 8px;
-        border-color: var(--cor3);
-    
-    }
-    button{
-        margin-top: 5px;
-        width: 80%;
-        height: 35px;
-        border-radius: 8px;
-        font-family: var(--fonte);
-        text-transform: uppercase;
-        border: none;
-        background-color: var(--cor3);
-        color: white;
-        font-size: 1.4rem;
-        transition: .1s;
-    }
-    button:hover{
-        background-color: var(--cor4);
-        color: white;
-    }
+#formconf h2{
+    padding-bottom: 40px;
+    font-size: 5rem;
+    font-family: var(--fonte1);
+    color: var(--cor3);
+}
+#formconf p{
+    padding-bottom: 20px; 
+    font-size: 1.7rem;
+    font-family: var(--fonte2);
+    color: var(--cor5);
+}
+#formconf input{
+    width: 79%;
+    height: 25px;
+    border-radius: 8px;
+    border-color: var(--cor3);
+
+}
+#formconf button{
+    margin-top: 5px;
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    font-family: var(--fonte);
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--cor3);
+    color: white;
+    font-size: 1.4rem;
+    transition: .1s;
+}
+#formconf button:hover{
+    background-color: var(--cor4);
+    color: white;
 }
 
 
