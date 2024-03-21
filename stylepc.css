@@ -5,7 +5,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-style: italic;   
+    font-style: italic;  
 }
 
 :root {
@@ -20,8 +20,11 @@
 
 
 /* PARTE INICIAL DO SITE */
-body{
+html{
+    overflow-x: hidden;
+    font-size: 62.5%; 
 }
+
 section#inicio{
     
 }
@@ -39,10 +42,16 @@ div#imgi{
     position: relative;
 }
 
-div#imgi p{
+div#imgi p#nomes{
     font-family: var(--fonte1);
-    font-size: 60px;
+    font-size: 5rem;
     color: var(--cor1);    
+}
+
+div#imgi p#data{
+    font-family: var(--fonte1);
+    font-size: 3rem;
+    color: var(--cor1); 
 }
 
 div#imgi #arrow{
@@ -65,16 +74,13 @@ div#imgi #arrow p{
     font-family: var(--fonte2);
     text-transform: uppercase;
     font-size: 15px;
+    color: white;
 }
 
 div#imgi .material-symbols-outlined{
     color: white;
     rotate: 90deg;
     font-size: 25px;
-}
-
-div#imgi p#data{
-    font-size: 40px;
 }
 
 nav{
@@ -103,6 +109,7 @@ nav .list-menu li a{
     font-family: var(--fonte2);
     padding-bottom: 20px;
     font-weight: bold;
+    font-size: 1.7rem;
 }
 
 nav .list-menu li a:hover{
@@ -141,7 +148,7 @@ section#noivos{
     align-items: center;
     color: var(--cor2);
     font-family: var(--fonte1);
-    font-size: 65px;   
+    font-size: 7rem;   
 }
 
 #imgpeq #e h2{
@@ -156,7 +163,7 @@ section#noivos{
     padding-top: 15px;
     font-family: var(--fonte2);
     color: var(--cor3);
-    font-size: 20px;
+    font-size: 2.4rem;
 }
 
 div#info{
@@ -166,14 +173,14 @@ div#info{
 div#info h2{
     color: var(--cor5);
     font-family: var(--fonte1);
-    font-size: 70px;
+    font-size: 6.5rem;
     font-weight: 500;
 }
 
 div#info p{
     color: var(--cor4);
     font-family: var(--fonte2);
-    font-size: 15px;
+    font-size: 1.6rem;
 }
 
 /*SEÇÃO CONTADOR*/
@@ -183,11 +190,20 @@ section#contador{
     background-color: var(--cor1);
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 5rem;
     color: var(--cor5);
 }
 
 /* SEÇÃO SOBRE */
+section#sobremobile {
+    height: 850px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 140px;
+}
+
 section#sobre {
     height: 850px;
     display: flex;
@@ -200,7 +216,7 @@ section#sobre {
 section#sobre h1{
     text-align: center;
     font-family: var(--fonte1);
-    font-size: 70px;
+    font-size: 6.5rem;
     color: var(--cor5);
     padding-top: 80px;
     padding-bottom: 30px;
@@ -208,11 +224,10 @@ section#sobre h1{
 }
 
 section#sobre div#blococol{
-    display: flex;  
-    flex-direction: column;  
+    display: flex;   
 }
 
-section#sobre .blocoind{
+section#sobre .blocoinda{
     display: flex;
 }
 
@@ -241,13 +256,14 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2 h3{
     font-family: var(--fonte2);
     color: var(--cor4);    
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
     font-family: var(--fonte2);
     color: var(--cor3);
     font-style: normal;
+    font-size: 1.5rem;
 }
 
 /* SEÇÃO CONFIRMAÇÃO */
@@ -259,11 +275,82 @@ section#confirmação{
     justify-content: center;  
 }
 
-#formconf{
+#conf{
     background-color: white;
-    width: 300px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671) ;
+}
+
+.imag{
+    background-image: url(imagens/teste.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+#formconf{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: right;
+    width: 55%;
+    height: 100%;
+    text-align: center;
+
+    h2{
+        padding-bottom: 40px;
+        font-size: 5rem;
+        font-family: var(--fonte1);
+        color: var(--cor3);
+    }
+    p{
+        padding-bottom: 20px; 
+        font-size: 1.7rem;
+        font-family: var(--fonte2);
+        color: var(--cor5);
+    }
+    input{
+        width: 79%;
+        height: 25px;
+        border-radius: 8px;
+        border-color: var(--cor3);
+    
+    }
+    button{
+        margin-top: 5px;
+        width: 80%;
+        height: 35px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        text-transform: uppercase;
+        border: none;
+        background-color: var(--cor3);
+        color: white;
+        font-size: 1.4rem;
+        transition: .1s;
+    }
+    button:hover{
+        background-color: var(--cor4);
+        color: white;
+    }
+}
+
+
+
+/* SECTION SLIDES */
+section#slides{
+    background-color: #574990;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* SEÇÃO MAPA */
@@ -298,3 +385,4 @@ footer a:hover{
     border-bottom: solid 1px rgb(100, 0, 0);
     color: rgb(100, 0, 0);
 }
+
