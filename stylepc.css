@@ -192,6 +192,17 @@ section#contador{
     align-items: center;
     font-size: 5rem;
     color: var(--cor5);
+    text-align: center;
+}
+
+#contreg{
+    display: flex;
+    gap: 50px;
+}
+
+.bloccont{
+    display: flex;
+    gap: 50px;
 }
 
 /* SEÇÃO SOBRE */
