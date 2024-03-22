@@ -18,11 +18,14 @@
     --fonte2:"GFS Didot", serif;
 }
 
-
 /* PARTE INICIAL DO SITE */
 html{
     overflow-x: hidden;
     font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+body{
+    
 }
 
 #sob{
@@ -123,9 +126,9 @@ nav .list-menu li a{
     text-transform: uppercase;
     color: var(--cor3);   
     font-family: var(--fonte2);
-    padding-bottom: 20px;
+    padding-bottom: 23px;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 nav .list-menu li a:hover{
@@ -376,7 +379,7 @@ section#confirmação{
 /* SECTION SLIDES */
 
 #slides{
-    background-color: #574990;
+    background-color: white;
     height: 800px;
     display: flex;
     justify-content: center;
@@ -492,7 +495,8 @@ section#mapa{
     height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    background-color: var(--cor1);    
 }
 
 /* FOOTER */
