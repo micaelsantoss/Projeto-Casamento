@@ -5,11 +5,92 @@
         font-size: 50%; 
         
      }
+
     body{
     
     }
-    nav .list-menu{
-       display: none; 
+    
+    #sob{
+        display: none;
+    }
+
+    #sobmob{
+        display: flex;
+    }
+
+    nav{
+    
+        border-bottom: var(--cor2) solid 1px;
+        justify-content: center;
+        display: flex;
+        height: 64px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        transition: .7s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav .list-menu{
+       display: flex;
+       width: 100vw;
+       height: 100vh;
+       background: #f0eef800;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       gap: 0;
+
+       clip-path: circle(100px at 9% -15px);
+       transition: .6s ease-in-out;
+       pointer-events: none;
+    }
+
+    .nav.active{
+        height: 500px;
+        
+    }
+
+    .nav.active .list-menu{
+        clip-path: circle(1500px at 98% -15px);
+        pointer-events: all;
+        background: var(--cor1);
+    }
+
+    .nav.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7.7px;
+    }
+
+    .hamburguer{
+        position: absolute;
+        border: none;
+        background: none;
+        border-top: 3px solid var(--cor4);
+        cursor: pointer;
+        margin-top: 23px;
+        right: 23px;
+        z-index: 2000;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: var(--cor4);
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
     }
 
     /* DESENVOLVIMENTO DO SITE */
@@ -51,7 +132,7 @@
     /*SEÇÃO CONTADOR*/
     section#contador{
         display: flex;
-        height: 200px;
+        height: 300px;
         background-color: var(--cor1);
         justify-content: center;
         align-items: center;
@@ -146,7 +227,7 @@
 
 /* SEÇÃO CONFIRMAÇÃO */
     section#confirmação{
-        height: 600px;
+        height: 700px;
         background-color: var(--cor1); 
         display: flex;
         align-items: center; 
@@ -164,6 +245,7 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
         transition: width .8s, heigth .8s;
         transition-timing-function: ease;
+        z-index: 1;
     }
 
     .imag{
@@ -233,14 +315,93 @@
         font-size: 62.5%; 
     } 
     
-    nav .list-menu{
+    #sob{
+        display: flex;
+    }
+
+    #sobmob{
         display: none;
+    }
+
+    nav{
+    
+        border-bottom: var(--cor2) solid 1px;
+        justify-content: center;
+        display: flex;
+        height: 64px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        transition: .7s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav .list-menu{
+       display: flex;
+       width: 100vw;
+       height: 100vh;
+       background: #f0eef800;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       gap: 0;
+
+       clip-path: circle(100px at 9% -15px);
+       transition: .6s ease-in-out;
+       pointer-events: none;
+    }
+
+    .nav.active{
+        height: 500px;
+        
+    }
+
+    .nav.active .list-menu{
+        clip-path: circle(1500px at 98% -15px);
+        pointer-events: all;
+        background: var(--cor1);
+    }
+
+    .nav.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7.7px;
+    }
+
+    .hamburguer{
+        position: absolute;
+        border: none;
+        background: none;
+        border-top: 3px solid var(--cor4);
+        cursor: pointer;
+        margin-top: 23px;
+        right: 23px;
+        z-index: 2000;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: var(--cor4);
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
     }
 
     /*SEÇÃO CONTADOR*/
     section#contador{
         display: flex;
-        height: 200px;
+        height: 320px;
         background-color: var(--cor1);
         justify-content: center;
         align-items: center;
@@ -324,7 +485,7 @@
     /* SEÇÃO CONFIRMAÇÃO */
     #conf{
         background-color: white;
-        width: 650px;
+        width: 750px;
         height: 500px;
         border-radius: 20px;
         display: flex;

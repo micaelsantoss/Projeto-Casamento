@@ -16,23 +16,27 @@
                 <p id="nomes">Adriana e Micael</p> 
                 <p id="data">11.05.2024</p>
                 <div id="arrow">
-                    <p>Acessar Site</p>
-                    <span class="material-symbols-outlined">
-                        double_arrow
-                    </span>
+                    <a href="#noivos">
+                        <p>Acessar Site</p>
+                        <span class="material-symbols-outlined">
+                            double_arrow
+                        </span>
+                    </a>
                 </div>
             </div>
-        </section>
-        <nav>
-            <ul class="list-menu">
-                <li id="ex"><a href="#">Contador</a></li>
-                <li id="ex"><a href="#">Sobre os Noivos</a></li>
-                <li id="ex"><a href="#">Confirme sua Presença</a></li>
-                <li id="ex"><a href="#">Local</a></li>  
-            </ul>
-        </nav>
-        
+        </section>   
     </header>
+    <nav class="nav">
+        <div id="button"><button class="hamburguer"></button></div>
+        <ul class="list-menu">
+            <li><a href="#contador">Contador</a></li>
+            <li id="sob"><a href="#sobre">Sobre os Noivos</a></li>
+            <li id="sobmob"><a href="#sobremobile">Sobre os Noivos</a></li>
+            <li><a href="#confirmação">Confirme sua Presença</a></li>
+            <li><a href="#slides">Fotos</a></li>
+            <li><a href="#mapa">Local</a></li>  
+        </ul>
+    </nav> 
     
     <!-- DESENVOLVIMENTO DO SITE -->
     <main>
@@ -141,7 +145,40 @@
             </div>
         </section>
         <section id="slides">
-            <H1>AQUI VEM ALGUMAS FOTOS</H1>
+            <div class="slidesback">
+                <div class="slides">
+                    <!-- DIV RADIOS -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <!-- FIM DIV RADIOS -->
+                    <!-- DIV IMGS -->
+                    <div class="slide first"><img src="imagens/teste.webp" alt=""></div>
+                    <div class="slide"><img src="imagens/teste2.png" alt=""></div>
+                    <div class="slide"><img src="imagens/teste3.jpg" alt=""></div>
+                    <div class="slide"><img src="imagens/teste4.jpg" alt=""></div>
+                    <div class="slide"><img src="imagens/teste5.jpg" alt=""></div>
+                    <!-- FIM DIV IMGS -->
+                    <!-- NAVIGATION -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                    <!-- FIM NAVIGATION -->
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
         <section id="mapa">
             <div class="map">
