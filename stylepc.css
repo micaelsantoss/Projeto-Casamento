@@ -68,7 +68,7 @@ div#imgi p#data{
 
 div#imgi #arrow{
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     animation: arrowmove 1s ease-in-out alternate infinite;
 }
 
@@ -299,6 +299,10 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
 
 /* SEÇÃO CONFIRMAÇÃO */
 section#confirmação{
+    background-image: url(imagens/teste5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 700px;
     background-color: var(--cor1); 
     display: flex;
