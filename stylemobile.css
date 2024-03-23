@@ -49,7 +49,6 @@
 
     .nav.active{
         height: 500px;
-        
     }
 
     .nav.active .list-menu{
@@ -308,6 +307,8 @@
         color: white;
     }   
     
+
+    /* SEÇÃO SLIDES */
     #slides{
         background-color: white;
         height: 600px;
@@ -318,7 +319,7 @@
     
     section#slides .slidesback{
         height: 250px;
-        width: 450px;
+        width: 400px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -339,12 +340,12 @@
     }
     
     .slide img{
-        width: 450px;
+        width: 400px;
     }
     
     .manual-navigation{
         position: absolute;
-        width: 450px;
+        width: 400px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
@@ -352,7 +353,7 @@
     
     .manual-btn{
         border: 2px solid white;
-        width: 25px;
+        width: 20px;
         border-radius: 2px;
         padding: 5px;
         cursor: pointer;
@@ -360,7 +361,7 @@
     }
     
     .manual-btn:not(:last-child){
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     .manual-btn:hover{
@@ -385,7 +386,7 @@
     
     .navigation-auto div{
         border: 2px solid white;
-        width: 25px;
+        width: 20px;
         border-radius: 2px;
         padding: 5px;
         cursor: pointer;
@@ -394,14 +395,14 @@
     
     .navigation-auto{
         position: absolute;
-        width: 450px;
+        width: 400px;
         margin-top: 210px;
         display: flex;
         justify-content: center;
     }
     
     .navigation-auto div:not(:last-child){
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     #radio1:checked ~ .navigation-auto .auto-btn1{
