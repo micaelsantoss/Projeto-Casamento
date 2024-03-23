@@ -311,7 +311,7 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: white;
-        height: 600px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -735,7 +735,7 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: white;
-        height: 600px;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -846,7 +846,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 769px) and (max-width: 992px){
     /* PARTE INICIAL DO SITE */
     html{
         overflow-x: hidden;
@@ -895,7 +895,7 @@
     }
 
     .nav.active .list-menu{
-        clip-path: circle(1500px at 98% -15px);
+        clip-path: circle(10500px at 98% -15px);
         pointer-events: all;
         background: var(--cor1);
     }
@@ -1091,7 +1091,7 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: white;
-        height: 800px;
+        height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
