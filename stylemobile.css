@@ -742,14 +742,14 @@
     }
     
     section#slides .slidesback{
-        height: 350px;
-        width: 600px;
+        height: 310px;
+        width: 500px;
         margin: 0 auto;
         overflow: hidden;
     }
     
     .slides{
-        height: 350px;
+        height: 310px;
         width: 400%;
         display: flex;
     }
@@ -764,12 +764,12 @@
     }
     
     .slide img{
-        width: 600px;
+        width: 500px;
     }
     
     .manual-navigation{
         position: absolute;
-        width: 600px;
+        width: 500px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
@@ -819,8 +819,8 @@
     
     .navigation-auto{
         position: absolute;
-        width: 600px;
-        margin-top: 310px;
+        width: 500px;
+        margin-top: 270px;
         display: flex;
         justify-content: center;
     }
