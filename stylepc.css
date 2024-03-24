@@ -42,10 +42,11 @@ section#inicio{
 }
 
 div#imgi{
-    background-image: url(imagens/teste.webp);
+    background-image: url(imagens/slide4.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -299,12 +300,12 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
 
 /* SEÇÃO CONFIRMAÇÃO */
 section#confirmação{
-    background-image: url(imagens/teste5.jpg);
+    background-image: url(imagens/slide2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 700px;
-    background-color: var(--cor1); 
+    background-position: right top;
+    height: 700px; 
     display: flex;
     align-items: center; 
     justify-content: center;  
@@ -324,7 +325,7 @@ section#confirmação{
 }
 
 .imag{
-    background-image: url(imagens/teste.webp);
+    background-image: url(imagens/IMG_3647.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     float: left;
