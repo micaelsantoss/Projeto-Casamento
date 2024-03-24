@@ -1,9 +1,34 @@
-/* MENU HAMBIRGUER */
+/* MENU HAMBURGUER */
 var hamburguer = document.querySelector(".hamburguer");
 var nav = document.querySelector(".nav");
 
 hamburguer.addEventListener("click", () => 
 nav.classList.toggle("active"));
+
+var rem1 = document.getElementById('rem1');
+var rem2 = document.getElementById('rem2');
+var rem3 = document.getElementById('rem3');
+var rem4 = document.getElementById('rem4');
+var rem5 = document.getElementById('rem5');
+var rem6 = document.getElementById('rem6');
+
+rem1.addEventListener("click", () => 
+nav.classList.remove("active"));
+
+rem2.addEventListener("click", () => 
+nav.classList.remove("active"));
+
+rem3.addEventListener("click", () => 
+nav.classList.remove("active"));
+
+rem4.addEventListener("click", () => 
+nav.classList.remove("active"));
+
+rem5.addEventListener("click", () => 
+nav.classList.remove("active"));
+
+rem6.addEventListener("click", () => 
+nav.classList.remove("active"));
 
 
 /* CONTADOR */
