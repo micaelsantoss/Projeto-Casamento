@@ -266,6 +266,7 @@ section#sobre .blocoinda{
 section#sobre .blocoind img{
     width: 520px;
     height: 330px;
+    object-fit: cover;
 }
 section#sobre .blocoind .sobrenoivos{
     background-color: var(--cor1);
