@@ -3,14 +3,9 @@
     
     /* PARTE INICIAL DO SITE */
     html{
-        font-size: 50%; 
-        
+        font-size: 50%;  
      }
 
-    body{
-    
-    }
-    
     #sob{
         display: none;
     }
@@ -20,7 +15,6 @@
     }
 
     nav{
-    
         border-bottom: var(--cor2) solid 1px;
         justify-content: center;
         display: flex;
@@ -47,9 +41,6 @@
        pointer-events: none;
     }
 
-    .nav.active{
-        height: 500px;
-    }
 
     .nav.active .list-menu{
         clip-path: circle(1500px at 98% -15px);
@@ -477,11 +468,6 @@
        pointer-events: none;
     }
 
-    .nav.active{
-        height: 500px;
-        
-    }
-
     .nav.active .list-menu{
         clip-path: circle(1500px at 98% -15px);
         pointer-events: all;
@@ -893,11 +879,6 @@
        clip-path: circle(100px at 98% -15px);
        transition: .6s ease-in-out;
        pointer-events: none;
-    }
-
-    .nav.active{
-        height: 500px;
-        
     }
 
     .nav.active .list-menu{

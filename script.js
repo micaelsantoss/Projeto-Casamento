@@ -13,22 +13,22 @@ var rem5 = document.getElementById('rem5');
 var rem6 = document.getElementById('rem6');
 
 rem1.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 rem2.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 rem3.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 rem4.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 rem5.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 rem6.addEventListener("click", () => 
-nav.classList.remove("active"));
+nav.classList.toggle("active"));
 
 
 /* CONTADOR */
