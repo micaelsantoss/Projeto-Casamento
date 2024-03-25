@@ -1,0 +1,422 @@
+@media screen and (min-width: 610px) and (max-width: 767px) {
+
+    /* PARTE INICIAL DO SITE */
+    html{
+        font-size: 50%; 
+        
+     }
+
+    body{
+    
+    }
+    
+    #sob{
+        display: none;
+    }
+
+    #sobmob{
+        display: flex;
+    }
+
+    nav{
+    
+        border-bottom: var(--cor2) solid 1px;
+        justify-content: center;
+        display: flex;
+        height: 64px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        transition: .7s ease-in-out;
+        z-index: 999;
+    }
+
+    #button{
+        display: block;
+    }
+
+    .nav .list-menu{
+       display: flex;
+       width: 100vw;
+       height: 100vh;
+       background: #f0eef800;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       gap: 0;
+
+       clip-path: circle(100px at 98% -15px);
+       transition: .6s ease-in-out;
+       pointer-events: none;
+    }
+
+    .nav.active .list-menu{
+        clip-path: circle(1500px at 98% -15px);
+        pointer-events: all;
+        background: var(--cor1);
+    }
+
+    .nav.active .hamburguer{
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7.7px;
+    }
+
+    .hamburguer{
+        position: absolute;
+        border: none;
+        background: none;
+        border-top: 3px solid var(--cor4);
+        cursor: pointer;
+        margin-top: 20px;
+        right: 23px;
+        z-index: 2000;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: var(--cor4);
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+    }
+
+    /* DESENVOLVIMENTO DO SITE */
+
+    /*SEÇÃO NOIVOS*/
+    section#noivos{
+        height: 800px;    
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #imgpeq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #imgpeq .imgpeq{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+
+    #imgpeq #e{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        color: var(--cor2);
+        font-family: var(--fonte1);
+        font-size: 5rem;  
+    
+    }
+    
+    /*SEÇÃO CONTADOR*/
+    section#contador{
+        display: flex;
+        height: 300px;
+        background-color: var(--cor1);
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: var(--cor5);
+        text-align: center;
+    }
+
+    #contreg{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SEÇÃO SOBRE */
+    section#sobre {
+        height: 850px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    section#sobremobile {
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    
+    section#sobremobile h1{
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 5rem;
+        color: var(--cor5);
+        padding-top: 80px;
+        padding-bottom: 30px;
+        font-weight: 100;
+    }
+
+    section#sobremobile div#blococol{
+        display: flex;  
+        flex-direction: column;  
+    }
+
+    section#sobremobile .blocoind{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#sobremobile .blocoind img{
+        width: 340px;
+        height: 340px;
+    }
+
+    section#sobremobile .blocoind .sobrenoivos{
+        background-color: var(--cor1);
+        width: 340px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section#sobremobile .blocoind .sobrenoivos .sobrenoivos2{
+        width: 80%;
+        height: 10px;  
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: justify;         
+    }
+    
+    section#sobremobile .blocoind .sobrenoivos .sobrenoivos2 h3{
+        font-family: var(--fonte2);
+        color: var(--cor4);    
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
+    
+    section#sobremobile .blocoind .sobrenoivos .sobrenoivos2 p{
+        font-family: var(--fonte2);
+        color: var(--cor3);
+        font-style: normal;
+        font-size: 1.5rem;
+        max-width: 280px;
+    }
+
+/* SEÇÃO CONFIRMAÇÃO */
+    section#confirmação{
+        height: 700px;
+        background-color: var(--cor1); 
+        display: flex;
+        align-items: center; 
+        justify-content: center;  
+    }
+
+    #conf{
+        position: relative;
+        background-color: white;
+        width: 250px;
+        height: 500px;
+        border-radius: 20px;
+        display: block;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+        transition: width .8s, heigth .8s;
+        transition-timing-function: ease;
+        z-index: 1;
+    }
+
+    .imag{
+        background-image: url(imagens/imagemconfirm.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        float: top;
+        width: 100%;
+        height: 40%;
+    }
+
+    #formconf{
+        
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 50px;
+        float: bottom;
+        text-align: center;
+    }
+    #formconf h2{
+        padding-bottom: 10px;
+        font-size: 3rem;
+        font-family: var(--fonte1);
+        color: var(--cor3);
+    }
+    #formconf p{
+        padding-bottom: 10px; 
+        font-size: 1rem;
+        font-family: var(--fonte2);
+        color: var(--cor5);
+    }
+    #formconf input{
+        position: absolute;
+        left: 20px;
+        width: 210px;
+        height: 25px;
+        border-radius: 8px;
+        border-color: var(--cor3);
+    
+    }
+    #formconf button{
+        position: absolute;
+        margin-top: 5px;
+        left: 20px;
+        bottom: 70px;
+        width: 213px;
+        height: 35px;
+        border-radius: 8px;
+        font-family: var(--fonte);
+        text-transform: uppercase;
+        border: none;
+        background-color: var(--cor3);
+        color: white;
+        font-size: 1.4rem;
+        transition: .1s;
+    }
+    #formconf button:hover{
+        background-color: var(--cor4);
+        color: white;
+    }   
+
+    /* SEÇÃO SLIDES */
+    #slides{
+        background-color: white;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section#slides .slidesback{
+        height: 290px;
+        width: 450px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .slides{
+        height: 290px;
+        width: 400%;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+        width: 25%;
+        position: relative;
+    }
+    
+    .slide img{
+        width: 450px;
+    }
+    
+    .manual-navigation{
+        position: absolute;
+        width: 450px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn{
+        border: 2px solid white;
+        width: 25px;
+        border-radius: 2px;
+        padding: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 20px;
+    }
+    
+    .manual-btn:hover{
+        background-color: white;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -50%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -75%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -100%;
+    }
+    
+    .navigation-auto div{
+        border: 2px solid white;
+        width: 25px;
+        border-radius: 2px;
+        padding: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .navigation-auto{
+        position: absolute;
+        width: 450px;
+        margin-top: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 20px;
+    }
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: white;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: white;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: white;
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color: white;
+    }
+    #radio5:checked ~ .navigation-auto .auto-btn5{
+        background-color: white;
+    }
+}
