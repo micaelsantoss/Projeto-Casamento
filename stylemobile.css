@@ -26,6 +26,10 @@
         z-index: 999;
     }
 
+    #button{
+        display: block;
+    }
+
     .nav .list-menu{
        display: flex;
        width: 100vw;
@@ -453,6 +457,10 @@
         z-index: 999;
     }
 
+    #button{
+        display: block;
+    }
+
     .nav .list-menu{
        display: flex;
        width: 100vw;
@@ -865,6 +873,10 @@
         top: 0px;
         transition: .7s ease-in-out;
         z-index: 999;
+    }
+
+    #button{
+        display: block;
     }
 
     .nav .list-menu{

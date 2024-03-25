@@ -138,6 +138,10 @@ nav .list-menu li a:hover{
     color: var(--cor4);      
 }
 
+#button{
+    display: none;
+}
+
 /* DESENVOLVIMENTO DO SITE */
 
 /*SEÇÃO NOIVOS*/
