@@ -11,6 +11,7 @@ var rem3 = document.getElementById('rem3');
 var rem4 = document.getElementById('rem4');
 var rem5 = document.getElementById('rem5');
 var rem6 = document.getElementById('rem6');
+var rem7 = document.getElementById('rem7');
 
 rem1.addEventListener("click", () => 
 nav.classList.toggle("active"));
@@ -28,6 +29,9 @@ rem5.addEventListener("click", () =>
 nav.classList.toggle("active"));
 
 rem6.addEventListener("click", () => 
+nav.classList.toggle("active"));
+
+rem7.addEventListener("click", () => 
 nav.classList.toggle("active"));
 
 
