@@ -58,15 +58,13 @@ div#imgi{
 div#imgi p#nomes{
     font-family: var(--fonte1);
     font-size: 5rem;
-    color: var(--cor4);  
-    text-shadow: white 1px 2px 1px ;  
+    color:  white;   
 }
 
 div#imgi p#data{
     font-family: var(--fonte1);
     font-size: 3rem;
-    color: var(--cor4); 
-    text-shadow: white 1px 2px 1px ; 
+    color: white;  
 }
 
 div#imgi #arrow{
@@ -93,13 +91,11 @@ div#imgi #arrow a p{
     font-family: var(--fonte2);
     text-transform: uppercase;
     font-size: 15px;
-    color: var(--cor4);
-    text-shadow: white 1px 2px 1px ; 
+    color: white; 
 }
 
 div#imgi .material-symbols-outlined{
-    color: var(--cor4);
-    text-shadow: white 1px 2px 1px ; 
+    color: white; 
     rotate: 90deg;
     font-size: 25px;
 }
