@@ -58,13 +58,15 @@ div#imgi{
 div#imgi p#nomes{
     font-family: var(--fonte1);
     font-size: 5rem;
-    color: var(--cor1);    
+    color: var(--cor4);  
+    text-shadow: white 1px 2px 1px ;  
 }
 
 div#imgi p#data{
     font-family: var(--fonte1);
     font-size: 3rem;
-    color: var(--cor1); 
+    color: var(--cor4); 
+    text-shadow: white 1px 2px 1px ; 
 }
 
 div#imgi #arrow{
@@ -91,11 +93,13 @@ div#imgi #arrow a p{
     font-family: var(--fonte2);
     text-transform: uppercase;
     font-size: 15px;
-    color: white;
+    color: var(--cor4);
+    text-shadow: white 1px 2px 1px ; 
 }
 
 div#imgi .material-symbols-outlined{
-    color: white;
+    color: var(--cor4);
+    text-shadow: white 1px 2px 1px ; 
     rotate: 90deg;
     font-size: 25px;
 }
@@ -260,10 +264,11 @@ section#sobre h1{
 }
 
 section#sobre div#blococol{
-    display: flex;   
+    display: flex;
+    flex-direction: column;   
 }
 
-section#sobre .blocoinda{
+section#sobre .blocoind{
     display: flex;
 }
 
@@ -391,10 +396,19 @@ section#confirmação{
 
 #slides{
     background-color: white;
-    height: 800px;
+    height: 950px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
+}
+
+#slides h2{
+    font-size: 8rem;
+    font-family: var(--fonte1);
+    color: var(--cor3);   
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 section#slides .slidesback{
@@ -503,11 +517,23 @@ section#slides .slidesback{
 
 /* SEÇÃO MAPA */
 section#mapa{
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--cor1);    
+    height: 500px;
+    position: relative;
+    background-color: var(--cor1);
+}
+
+section .map{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+section#mapa h2{
+    text-align: center;
+    font-size: 7rem;
+    font-family: var(--fonte1);
+    padding-top: 40px;
+    color: var(--cor3);
 }
 
 /* FOOTER */

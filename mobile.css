@@ -312,10 +312,17 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: white;
-        height: 400px;
+        height: 550px;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+    }
+
+    #slides h2{
+        font-size: 8rem;
+        font-family: var(--fonte1);
+        color: var(--cor3);   
+        padding-bottom: 20px;
     }
     
     section#slides .slidesback{
