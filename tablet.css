@@ -94,7 +94,7 @@
     section#contador{
         display: flex;
         height: 320px;
-        background-color: var(--cor1);
+        background-color: var(--cor6);
         justify-content: center;
         align-items: center;
         font-size: 3rem;
@@ -143,7 +143,7 @@
         height: 230px;
     }
     section#sobre .blocoind .sobrenoivos{
-        background-color: var(--cor1);
+        background-color: var(--cor6);
         width: 320px;
         height: 230px;
         display: flex;
@@ -155,7 +155,7 @@
         width: 400px;
         height: 10px;  
         margin-top: 30px;
-        margin-left: 30px; 
+        margin-left: 20px; 
         text-align: justify;         
     }
 
@@ -207,8 +207,8 @@
 
     #formconf h2{
         padding-bottom: 50px;
-        font-size: 4.5rem;
-        font-family: var(--fonte1);
+        font-size: 3rem;
+        font-family: var(--fonte2);
         color: var(--cor3);
     }
     #formconf p{
@@ -255,6 +255,11 @@
         display: flex;
         justify-content: start;
         align-items: center;
+    }
+
+    #slides h2{
+        font-family: var(--fonte);
+        
     }
     
     section#slides .slidesback{

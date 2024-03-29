@@ -9,11 +9,12 @@
 }
 
 :root {
-    --cor1:#F0EEF8;
-    --cor2: #D0CAE6;
-    --cor3:#7C70AE;
-    --cor4:#574990;
-    --cor5:#A79ECD;
+    --cor1:#73556E;
+    --cor2: #F2E2CE;
+    --cor3:#A65E1F;
+    --cor4:#8C4126;
+    --cor5:#BF9D8A;
+    --cor6: #f7ece09c;
     --fonte1:"Alex Brush", cursive;
     --fonte2:"GFS Didot", serif;
 }
@@ -46,7 +47,7 @@ div#imgi{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -58,13 +59,17 @@ div#imgi{
 div#imgi p#nomes{
     font-family: var(--fonte1);
     font-size: 5rem;
-    color:  white;   
+    color:  white;  
+    font-weight: 400; 
+    text-shadow: 1px 1px 1px black;
 }
 
 div#imgi p#data{
     font-family: var(--fonte1);
     font-size: 3rem;
-    color: white;  
+    color:  white;  
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
 }
 
 div#imgi #arrow{
@@ -91,13 +96,16 @@ div#imgi #arrow a p{
     font-family: var(--fonte2);
     text-transform: uppercase;
     font-size: 15px;
-    color: white; 
+    color:  white; 
+    font-weight: 400;
+    text-shadow: 1px 1px 1px black;
 }
 
 div#imgi .material-symbols-outlined{
-    color: white; 
+    color:  white; 
     rotate: 90deg;
     font-size: 25px;
+    text-shadow: 1px 1px 1px black;
 }
 
 nav{
@@ -126,7 +134,7 @@ nav .list-menu li{
 nav .list-menu li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--cor3);   
+    color: var(--cor4);   
     font-family: var(--fonte2);
     padding-bottom: 23px;
     font-weight: bold;
@@ -212,12 +220,16 @@ div#info p{
 section#contador{
     display: flex;
     height: 300px;
-    background-color: var(--cor1);
+    background-color: var(--cor6);
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 7rem;
     color: var(--cor5);
     text-align: center;
+}
+
+section#contador p{
+    font-size: 2rem;
 }
 
 #contreg{
@@ -274,7 +286,7 @@ section#sobre .blocoind img{
     object-fit: cover;
 }
 section#sobre .blocoind .sobrenoivos{
-    background-color: var(--cor1);
+    background-color: var(--cor6);
     width: 520px;
     height: 330px;
     display: flex;
@@ -292,14 +304,14 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2{
 
 section#sobre .blocoind .sobrenoivos .sobrenoivos2 h3{
     font-family: var(--fonte2);
-    color: var(--cor4);    
+    color: var(--cor5);    
     padding-bottom: 20px;
     font-size: 2rem;
 }
 
 section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
     font-family: var(--fonte2);
-    color: var(--cor3);
+    color: var(--cor5);
     font-style: normal;
     font-size: 1.5rem;
 }
@@ -310,7 +322,7 @@ section#confirmação{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     height: 900px; 
     display: flex;
     align-items: center; 
@@ -351,8 +363,8 @@ section#confirmação{
 
 #formconf h2{
     padding-bottom: 40px;
-    font-size: 5rem;
-    font-family: var(--fonte1);
+    font-size: 3rem;
+    font-family: var(--fonte2);
     color: var(--cor3);
 }
 #formconf p{
@@ -400,8 +412,8 @@ section#confirmação{
 }
 
 #slides h2{
-    font-size: 8rem;
-    font-family: var(--fonte1);
+    font-size: 6rem;
+    font-family: var(--fonte2);
     color: var(--cor3);   
     padding-bottom: 50px;
     padding-top: 50px;
