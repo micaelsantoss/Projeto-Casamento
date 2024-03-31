@@ -79,12 +79,3 @@ function nextImage(){
     document.getElementById("radio"+count).checked = true;
 
 }
-
-/* CONFIRMAÇÃO */
-function clicar(){
-    let nome = document.getElementById('nomeconfirm')
-
-    if (nome.value.length == 0){
-        window.alert ('Por favor digite seu nome!')
-    }
-}
