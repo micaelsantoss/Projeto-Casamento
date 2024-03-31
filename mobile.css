@@ -260,8 +260,8 @@
     }
     #formconf h2{
         padding-bottom: 10px;
-        font-size: 4rem;
-        font-family: var(--fonte1);
+        font-size: 3.5rem;
+        font-family: var(--fonte2);
         color: var(--cor3);
         width: 200px;
         position: absolute;
@@ -319,8 +319,8 @@
     }
 
     #slides h2{
-        font-size: 8rem;
-        font-family: var(--fonte1);
+        font-size: 6rem;
+        font-family: var(--fonte2);
         color: var(--cor3);   
         padding-bottom: 20px;
     }
