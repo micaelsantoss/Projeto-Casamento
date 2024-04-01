@@ -118,6 +118,14 @@ nav{
     position: sticky;
     top: 0px;
     z-index: 999;
+    position: relative;
+}
+
+nav img{
+    position: absolute;
+    left: 20px;
+    width: 70px;
+    height: 70px;
 }
 
 nav .list-menu{
