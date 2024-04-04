@@ -210,6 +210,8 @@
         color: var(--cor4);    
         padding-bottom: 20px;
         font-size: 2rem;
+        padding-left: 10px;
+        padding-top: 10px;
     }
     
     section#sobremobile .blocoind .sobrenoivos .sobrenoivos2 p{
@@ -218,6 +220,7 @@
         font-style: normal;
         font-size: 1.5rem;
         max-width: 280px;
+        padding-left: 10px;
     }
 
 /* SEÇÃO CONFIRMAÇÃO */

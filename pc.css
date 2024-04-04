@@ -322,6 +322,7 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
     color: var(--cor5);
     font-style: normal;
     font-size: 1.5rem;
+    width: 430px;
 }
 
 /* SEÇÃO CONFIRMAÇÃO */
