@@ -26,20 +26,12 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    
-}
-
 #sob{
     display: block;
 }
 
 #sobmob{
     display: none;
-}
-
-section#inicio{
-    
 }
 
 div#imgi{
@@ -292,6 +284,7 @@ section#sobre .blocoind img{
     width: 520px;
     height: 330px;
     object-fit: cover;
+    object-position: top;
 }
 section#sobre .blocoind .sobrenoivos{
     background-color: var(--cor6);
@@ -355,6 +348,7 @@ section#confirmação{
     background-image: url(imagens/imagemconfirm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
     float: left;
     width: 45%;
     height: 100%;
