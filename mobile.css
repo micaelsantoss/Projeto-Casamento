@@ -122,6 +122,10 @@
         font-size: 5rem;  
     
     }
+
+    div#info h2{
+        font-size: 4rem;
+    }
     
     /*SEÇÃO CONTADOR*/
     section#contador{
@@ -315,7 +319,7 @@
 
     /* SEÇÃO SLIDES */
     #slides{
-        background-color: white;
+        background-color: var(--cor2);
         height: 550px;
         display: flex;
         justify-content: start;

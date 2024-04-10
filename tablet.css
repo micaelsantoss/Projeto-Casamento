@@ -121,6 +121,10 @@
         width: 700px;
     }
 
+    div#info h2{
+        font-size: 5.5rem;
+    }
+
     /*SEÇÃO CONTADOR*/
     section#contador{
         display: flex;
@@ -162,7 +166,7 @@
     section#sobre h1{
         text-align: center;
         font-family: var(--fonte1);
-        font-size: 6.5rem;
+        font-size: 6.5--rem;
         color: var(--cor5);
         padding-top: 80px;
         padding-bottom: 30px;
@@ -295,7 +299,7 @@
     
     /* SEÇÃO SLIDES */
     #slides{
-        background-color: white;
+        background-color: var(--cor2);
         height: 800px;
         display: flex;
         justify-content: start;
@@ -333,7 +337,7 @@
         width: 700px;
         height: 400px;
         object-fit: cover;
-        object-position: bottom;
+        object-position: center;
     }
     
     .manual-navigation{

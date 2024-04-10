@@ -332,7 +332,7 @@ section#confirmação{
 }
 
 #conf{
-    background-color: white;
+    background-color:white;
     width: 900px;
     height: 500px;
     border-radius: 20px;
@@ -406,7 +406,7 @@ section#confirmação{
 /* SECTION SLIDES */
 
 #slides{
-    background-color: white;
+    background-color: var(--cor2);
     height: 950px;
     display: flex;
     justify-content: start;
@@ -446,6 +446,8 @@ section#slides .slidesback{
 
 .slide img{
     width: 1000px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .manual-navigation{
