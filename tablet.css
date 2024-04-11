@@ -300,15 +300,14 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: var(--cor2);
-        height: 800px;
+        height: 650px;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 
     #slides h2{
-        font-family: var(--fonte);
-        
+        font-family: var(--fonte);    
     }
     
     section#slides .slidesback{

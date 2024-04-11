@@ -320,14 +320,14 @@
     /* SEÇÃO SLIDES */
     #slides{
         background-color: var(--cor2);
-        height: 550px;
+        height: 400px;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 
     #slides h2{
-        font-size: 6rem;
+        font-size: 4.5rem;
         font-family: var(--fonte2);
         color: var(--cor3);   
         padding-bottom: 20px;

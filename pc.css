@@ -407,9 +407,9 @@ section#confirmação{
 
 #slides{
     background-color: var(--cor2);
-    height: 950px;
+    height: 850px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -419,7 +419,6 @@ section#confirmação{
     font-family: var(--fonte2);
     color: var(--cor3);   
     padding-bottom: 50px;
-    padding-top: 50px;
 }
 
 section#slides .slidesback{
