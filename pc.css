@@ -277,7 +277,7 @@ section#sobre div#blococol{
 }
 
 section#sobre .blocoind{
-    display: flex;
+    display: flex;   
 }
 
 section#sobre .blocoind img{
@@ -314,7 +314,7 @@ section#sobre .blocoind .sobrenoivos .sobrenoivos2 p{
     font-family: var(--fonte2);
     color: var(--cor5);
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 430px;
 }
 
